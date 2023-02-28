@@ -43,7 +43,7 @@ export default function Form(props){
             {errors.password && errors.password.map((error,i)=>{
                 return<p key={`pass-${i}`} className={s.p}>{error+ "-"}</p>
             })}
-            <button type="submit">Login</button>
+            <button type="submit" className={s.boton}>Login</button>
         </form>
     )
 }

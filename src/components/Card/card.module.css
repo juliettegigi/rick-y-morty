@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
  
 
-.div{font-family:Creepster;
-    font-size: 2em;
+.div{
+  background-color:black;
+  font-family:Creepster;
+    font-size: 1.3em;
     border-style:groove;
     border-width: 20px;
     border-color: chartreuse;
@@ -10,27 +12,41 @@
    /*text-shadow: black 3px 5px 6px;*/
    text-shadow: black 8px 10px 4px; 
   position:relative;
-  height: 13em;
+  height: 11.1em;
+  width: 10em;
+ 
 }
 .div:hover{ 
 
-  height: auto;
+ top:10px;
+ z-index:5;
+
+ 
 }
 
 .div2{display: flex;
       flex-direction: column;
       align-items: center;
-    position:relative;
+    
 }
 .div3{height: 2em;
-       overflow: hidden;
+       overflow:hidden;
    
 }
 .div3:hover{ height: auto;
    color:black;
    text-shadow: chartreuse 8px 10px 4px; 
+   position:absolute;
+   width: 10em;
+   border-left: 20px groove chartreuse;
+   border-right: 20px groove chartreuse;
+   border-bottom: 20px groove chartreuse;
+   left:-20px;
+   background-color: aliceblue;
 }
 .img{
+  
+    width: 97%;
     height: 50%;
     border-radius: 100%;
     border-style: groove;
@@ -63,9 +79,16 @@
     margin-left: auto;
     border-radius: 12%;
     border-style: groove;
-    border-color: black;
-    border-width: 0.1em;
-    padding: 0.2em;
-   
+    border-color: chartreuse;
+    border-width: 0.2em;
+    padding: 0em 0.7em 0em 0.7em;
     
+   
+    font-family:Creepster;
+    font-size: 0.8em;
+ }
+ 
+ .cora{
+  position:absolute;
+  left: 0px;
  }

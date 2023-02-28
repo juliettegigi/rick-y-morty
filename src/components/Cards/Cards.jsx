@@ -5,10 +5,12 @@ export default function Cards(props){
    
 
     return(
-        <div className={s.div}>
+        <div className={s.padre}>
+           
+           
             {     props.personajes.map((personaje,i)=>{
-                  return <>
-                  <h3>{personaje.id}</h3>
+                  return  <div className={s.caja}>
+                  <h3>Id: {personaje.id}</h3>
                   <Card name={personaje.name}
                         species={personaje.species}
                         gender={personaje.gender}
@@ -17,11 +19,12 @@ export default function Cards(props){
                         id={personaje.id}
                         key={`${personaje.name}-${i}`}
                   />
-                  </>
+                  </div>
             })
             
             }
-                  
+          
+              
         </div>
     )
 }

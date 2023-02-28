@@ -29,7 +29,7 @@ export default function Detail(props){
   return(
     <>
     <div className={s.div1}>
-        {console.log("antes de render ",character)}
+       
         <img src={character.image} alt={character.name} className={s.image}/>
       <div className={s.div2}>
        <h1>Name: {character.name}</h1>

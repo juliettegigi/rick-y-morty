@@ -31,7 +31,7 @@ function login(userData){
 
 
 useEffect(() => {
-
+  console.log(access);
    !access && navigate('/');
  
 }, []);
@@ -82,8 +82,9 @@ const logout=()=>{
             <Route path="/about" element={<About/>}></Route>
             <Route path="/detail/:detailId" element={<Detail/>}></Route>
             <Route path="/favorites" element={<Favorites/>}></Route>
-           <Route path="/*" element={<Error/>}></Route>
+           
           </> }
+          <Route path="/*" element={<Error/>}></Route> 
        </Routes>
 
     </div> 

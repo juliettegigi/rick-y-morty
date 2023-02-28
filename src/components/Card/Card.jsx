@@ -50,7 +50,7 @@ function Card(props){
         <div className={s.div}>
      
             <div className={s.div1}>
-            <button onClick={handleFavorite}>{isFav.img}</button>
+            <button onClick={handleFavorite} className={s.boton+" "+s.cora} >{isFav.img}</button>
 
           { props.onClose && <button className={s.boton} onClick={()=>{props.onClose(props.id)}}>X</button>}
             </div>
